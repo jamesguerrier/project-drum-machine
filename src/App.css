@@ -1,0 +1,162 @@
+body,html{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+
+}
+
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px double rgb(187, 218, 13);
+  outline: darkolivegreen;
+  padding: 16px;
+  background-color: #888888;
+  
+}
+.pad-bank{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-right: 20px;
+  padding: 5px
+}
+
+.drum-pad{
+  
+
+}
+button{
+  padding: 20px;
+  font-weight: bold;
+  font-size: medium;
+  border-radius: 5px;
+  box-shadow: 5px 10px #5c5a5a;
+  background-color: #b3adad;
+  border: 1px solid;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  border:2px solid #333;
+  margin-left: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.slideThree {
+  width: 80px;
+  height: 26px;
+  background: #333;
+  margin: auto;
+  
+  position: relative;
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+.slideThree:after {
+  content: 'OFF';
+  color: #000;
+  position: absolute;
+  right: 10px;
+  z-index: 0;
+  font: 12px/26px Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px rgba(255,255,255,.15);
+}
+
+.slideThree:before {
+  content: 'ON';
+  color: #26262b;
+  position: absolute;
+  left: 10px;
+  z-index: 0;
+  font: 12px/26px Arial, sans-serif;
+  font-weight: bold;
+}
+label {
+  display: block;
+  width: 34px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+  background: #fcfff4;
+  background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+  left: 43px;
+} 
+
+
+ 
+input[type=checkbox]:checked label{
+  left: 43px;
+}
+    
+  
+.chekOne {
+  width: 50px;
+  height: 10px;
+  background: #333;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+  
+}
+    
+.chekOne label{
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -23px;
+  left: -3px;
+  cursor: pointer;
+  background: #fcfff4;
+  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  border-radius: 50px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+    
+}
+    
+.chekOne input[type=checkbox] {
+  visibility: hidden;
+}
+      
+.chekOne input[type=checkbox]:checked + label {
+  left: 37px;
+}  
+ 
+.show{
+  width: 70px;
+  height: 20px;
+  background: #c6c6c6;
+  margin-top: 10px;
+}
+  
